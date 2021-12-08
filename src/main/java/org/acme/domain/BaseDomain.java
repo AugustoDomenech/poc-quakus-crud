@@ -10,7 +10,7 @@ public abstract class BaseDomain extends PanacheEntityBase {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    public Long id;
 
     @Temporal(TemporalType.TIMESTAMP)
     @Column(name = "created_at")
